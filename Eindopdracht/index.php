@@ -3,6 +3,7 @@
 /*******************************************************************************************************************/
 /******************************************* OPDRACHT 1 doe je hieronder *******************************************/
 
+    
 /* 
  * Opdracht 1: voeg hier het bestand allcoins.php in. 
  * Verder hoef je geen code te schrijven op deze pagina.
@@ -15,6 +16,7 @@
 ?>
 
 <?php include 'header.php'; ?>
+<?php include 'bitcoinData.php'; ?>
 <div class="container mt-4">
     <div class="row mb-4">
         <div class="col d-flex justify-content-center">
@@ -31,6 +33,7 @@
             <a href="?euro=100" class="btn btn-info p-3 m-1">&euro;100</a>
             <a href="?euro=200" class="btn btn-info p-3 m-1">&euro;200</a>
             <a href="?euro=300" class="btn btn-info p-3 m-1">&euro;300</a>
+            
             <?php if (isset($buttons) && is_array($buttons)) : ?>
                 <?php foreach ($buttons as $button) : ?>
                     <a href="?euro=<?php echo $button ?>" class="btn btn-info p-3 m-1">&euro;<?php echo $button ?></a>
